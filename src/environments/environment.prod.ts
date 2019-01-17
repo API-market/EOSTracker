@@ -2,8 +2,8 @@ export const environment = {
   production: true,
   walletUrl: 'https://walleteos.com',
   votingUrl: 'https://eosportal.io',
-  appName: 'ORE Explorer - Staging',
+  appName: 'ORE Explorer',
   logoUrl: '/assets/logo.png',
-  blockchainUrl: 'https://ore-staging.openrights.exchange:443',
-  chainId: 'a6df478d5593b4efb1ea20d13ba8a3efc1364ee0bf7dbd85d8d756831c0e3256'
+  blockchainUrl: 'https://ore.openrights.exchange',
+  chainId: '7900eaca71d5b213d3e1e15d54d98ad235a7a5b8166361be78e672edeeb2b47a'
 };
