@@ -28,4 +28,9 @@ gcloud config set project open-rights-exchange
 gcloud -q app deploy app.yaml
 ```
 
+Note: To deploy to staing (staging.explorer.openrights.exchange)
+1. copy environment.staging.ts into environment.prod.ts (don't commit this change to repo)
+2. gcloud config set project open-rights-exchange
+3. gcloud -q app deploy staging.app.yaml
+
 Note: The dispatch.yml file in the ore-verifier repo was used to route traffic to https://explorer.openrights.exchange
