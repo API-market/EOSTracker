@@ -1,0 +1,22 @@
+dispatch:
+
+  # Deploy this file to update routings for this service
+  # $ gcloud config set project open-rights-exchange 
+  # $ gcloud app deploy dispatch.yaml  
+
+  # Default service serves the typical web resources and all static resources.
+  # - url: "*/favicon.ico"
+  #   service: web
+
+  # Default service serves simple hostname request.
+  # - url: "openrights.exchange/*"
+  #   service: default
+  # If we later add a website at www. ...
+  # - url: "www.openrights.exchange/*"
+  #   service: web
+
+  #!!!! Important
+  # Updating the dispatch file affects all apps running under open-rights-exchange project
+  # We should always have a single dispatch file to use for repos in the same project - otherwise we risk overwriting routes
+  # Use the following dispatch file (and make updates to it instead of this file)
+  # ---> https://github.com/Open-Rights-Exchange/ore-verifier/blob/master/dispatch.yaml
